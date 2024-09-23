@@ -1,0 +1,81 @@
+.partenaires{
+    background-color: var(--color-primary);
+    padding: 64px 0;
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 60px 0;
+    }
+
+    .contenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: var(--spacing-xl);
+        @media screen and (max-width: $breakpoint-md) {
+            gap: var(--spacing-md);
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+        }
+        
+        .partenaires_contenu{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 315px;
+            }
+            
+            
+            h2{
+                color: var(--color-white);
+            }
+            p{
+                width: 350px;
+                line-height: 200%;
+            }
+        }
+
+        .partenaires_exemple{
+            width: 540px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: var(--spacing-md);
+            @media screen and (max-width: $breakpoint-md) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                justify-content: center;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: var(--spacing-md) 15px ;
+                width: 315px;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fond{
+                background-color: var(--color-white);
+                width: 160px;
+                height: 90px;
+                border-radius: 16px;
+                padding: 8px 0 0 18px;
+            }
+
+            .icon-md{
+                width: 124px;
+                height: 78px;
+            }
+
+            .window{
+                fill: #0078D4;
+            }
+
+            .blender{
+                fill: #235785
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.modale{
+    position: fixed;
+    display: none;
+    z-index: 11;
+    
+    top: 0;
+    right: 0;
+
+    .contenumodale{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 700 5rem "Roboto", sans-serif;
+        height: 575px;
+        width: 375px;
+        background-color: var(--color-black);
+        text-align: center;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            gap: var(--spacing-lg);
+            list-style: none;
+            flex-direction: column;
+
+            li{
+                list-style: none;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+
+        .icon--xs{
+            position: absolute;
+            fill: var(--color-white);
+            top: 14px;
+            right: 35px;
+            cursor: pointer;
+        }
+
+        .bouton{
+            padding: 10px 14px;
+            font: 700 14px var(--font-primary);
+            color: var(--color-black);
+            background-color: var(--color-primary);
+            border-radius: 10px;
+            &:hover{
+                background-color: transparent;
+                outline: 2px solid var(--color-primary);
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+
+
+.visible{
+    display: flex;
+}

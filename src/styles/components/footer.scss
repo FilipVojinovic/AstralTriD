@@ -1,0 +1,124 @@
+footer{
+    padding: 48px 0 25px;
+    background-color: var(--color-bg-third);
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 60px 0;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        .nav{
+            padding-bottom: 34px;
+            
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap: var(--spacing-lg);
+                list-style: none;
+                @media screen and (max-width: $breakpoint-six-xs) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    text-align: center;
+                    gap: 15px;
+                }
+
+                li{
+                    list-style: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+        .bouton{
+            padding: 10px 14px;
+            font: 700 14px var(--font-primary);
+            color: var(--color-black);
+            background-color: var(--color-primary);
+            border-radius: 10px;
+            &:hover{
+                background-color: transparent;
+                outline: 2px solid var(--color-primary);
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .logo{
+        font-family: var(--font-secondary);
+        background: linear-gradient(90deg, rgba(180,31,22,1) 0%, rgba(238,160,61,1) 100%); //https://cssgradient.io/
+        background-clip: text;
+        color: transparent;
+        font-size: 28px;
+        padding-bottom: 39px;
+        cursor: pointer;
+        @media screen and (max-width: $breakpoint-xs) {
+            padding-bottom: 30px;
+        }
+        &:hover{
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+    }
+
+    .droits{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        width: 100%;
+        @media screen and (max-width: $breakpoint-xs) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .social{
+        display: flex;
+        gap: var(--spacing-sm); 
+        @media screen and (max-width: $breakpoint-six-xs) {
+            gap: var(--spacing-xs);
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            padding: 30px 0;
+        }
+
+        .fond_social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            background-color: var(--color-primary);
+            height: 32px;
+            width: 32px;
+            border-radius: 100px;
+            a{
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                fill: var(--color-white);
+                &:hover{
+                    fill: var(--color-black);
+                }
+                
+            }
+        }
+    }
+
+    .solid{
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        opacity: 0.2;
+        width: 1110px;
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 289px;
+        }
+    }
+}

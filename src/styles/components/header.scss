@@ -1,0 +1,62 @@
+header{
+    padding: 16px 0;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .nav{
+            @media screen and (max-width: $breakpoint-sm) {
+                display: none;
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap: var(--spacing-lg);
+                li{
+                    list-style: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+        .bouton{
+            padding: 10px 14px;
+            font: 700 14px var(--font-primary);
+            color: var(--color-black);
+            background-color: var(--color-primary);
+            border-radius: 10px;
+            @media screen and (max-width: $breakpoint-sm) {
+                display: none;
+            }
+            &:hover{
+                background-color: transparent;
+                outline: 2px solid var(--color-primary);
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .logo{
+        font-family: var(--font-secondary);
+        background: linear-gradient(90deg, rgba(180,31,22,1) 0%, rgba(238,160,61,1) 100%); //https://cssgradient.io/
+        background-clip: text;
+        color: transparent;
+        font-size: 28px;
+        cursor: pointer;
+        &:hover{
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+    }
+
+    .header_menu{
+        display: none;
+        fill: var(--color-white);
+        cursor: pointer;
+        @media screen and (max-width: $breakpoint-sm) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.forfaits{
+    padding: 64px 0;
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 60px 0;
+    }
+
+    .wrapper{
+        .forfaits_titre{
+            padding-bottom: 48px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: var(--spacing-xs);
+            @media screen and (max-width: $breakpoint-xs) {
+                text-align: left;
+                width: 315px;
+                align-items: start;
+            }
+
+            p{
+                width: 540px;
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 315px;
+                }
+            }
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 64px var(--spacing-md);
+            text-align: center;
+            @media screen and (max-width: $breakpoint-lg-xl) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: $breakpoint-xs-sm) {
+                grid-template-columns: 1fr;
+            }
+
+            .card{
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                gap: var(--spacing-xs);
+                @media screen and (max-width: $breakpoint-xs-sm) {
+                    flex-direction: row;
+                    text-align: left;
+                    width: 315px;
+                }
+
+                h3{
+                    color: var(--color-primary);
+                    @media screen and (max-width: $breakpoint-xs-sm) {
+                        padding-bottom: var(--spacing-xs);
+                    }
+                }
+                
+                .infos{
+                    @media screen and (max-width: $breakpoint-xs-sm) {
+                        width: 203px;
+                        padding-left: 40px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.vaisseau{
+                    fill: #C5D0D8;
+                }
+
+                .satellite{
+                    fill: #428BC1;
+                }
+
+                .galaxie{
+                    fill: #FFD600;
+                }
+
+                .planet{
+                    fill: #F5A97F;
+                }
+
+                .astronaute{
+                    fill: #F4D19B;
+                }
+
+                .telescope{
+                    fill: #82AEC0;
+                }

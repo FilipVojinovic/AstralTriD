@@ -1,0 +1,18 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Urbanist';
+    --font-secondary: 'Faster One';
+
+    --font-size-content: #{typo(16px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(60px, 75px)};
+    --font-size-h2: #{typo(30px, 48px)};
+    --font-size-h3: #{typo(24px)};
+    --font-size-h4: #{typo(20px, 30px)};
+    --font-size-conference-h3: #{typo(20px, 40px)};
+    --font-size-conferencier-h3: #{typo(24px)};
+}

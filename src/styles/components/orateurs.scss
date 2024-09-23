@@ -1,0 +1,62 @@
+.orateurs{
+    background: var(--color-bg-secondaire);
+    padding: var(--spacing-xl) 0;
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 60px 0;
+    }
+
+    h2{
+        padding-bottom: 48px;
+        @media screen and (max-width: $breakpoint-xs) {
+            padding-bottom: 64px;
+        }
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 64px var(--spacing-md);
+        @media screen and (max-width: $breakpoint-lg) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: $breakpoint-xs-sm) {
+            grid-template-columns: 1fr;
+        }
+
+        .card{
+            width: 350px;
+            height: 432px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            gap: var(--spacing-xs);
+            transition: 0.3s all ease-out;
+            &:hover{
+                img{transform: scale(1.1);
+                }
+            }
+
+            .card_content{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-xs);
+            }
+
+            .card_media{
+                overflow: hidden;
+                flex-shrink: 0;
+                border-radius: 8px;
+            }
+
+            img{
+                width: 350px;
+                height: 350px;
+                border-radius: 8px;
+                width: 100%;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: block;
+            }
+        }
+    }
+}

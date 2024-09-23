@@ -1,0 +1,87 @@
+.hero{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: var(--color-bg-secondaire);
+        gap: 32px;
+        @media screen and (max-width: $breakpoint-hero-xl) {
+            flex-direction: column-reverse;
+        }
+
+        img{
+            width: 703px;
+            height: 866px;
+            object-fit: cover;
+            @media screen and (max-width: $breakpoint-hero-xl) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .hero_contenu{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            width: 40%; //j'ai essayé beaucoup de choses pour positioner le conten'avec 40% le contenu était centré comme sur la maquette'
+            justify-content: center;
+            font-size: 18px;
+
+            @media screen and (max-width: $breakpoint-hero-xl) {
+                padding: 25px 0 60px;
+                width: 540px;
+                align-items: center;
+            }
+
+            @media screen and (max-width: $breakpoint-six-xs) {
+                width: 315px;
+                align-items: start;
+            }
+
+            .date{
+                font-weight: 700;
+            }
+            
+            p{
+                line-height: 32px;
+                width: 540px;
+                @media screen and (max-width: $breakpoint-six-xs) {
+                    width: 315px;
+                }
+            }
+
+            .rejoindre{
+                padding: 16px 55px;
+                font: 700 20px var(--font-primary);
+                color: var(--color-white);
+                background-color: var(--color-primary);
+                border-radius: 10px;
+                display: flex;
+                width: fit-content;
+                margin-top: var(--spacing-sm);
+    
+                &:hover{
+                    background-color: transparent;
+                    outline: 2px solid var(--color-primary);
+                    color: var(--color-primary);
+                }
+            }
+        }
+}
+.image_hero{
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 0 35%;
+        @media screen and (max-width: $breakpoint-sm) {
+            height: auto;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            height: 300px;
+            width: 480px;
+            object-position: 50% 0;
+        }
+    }
+    
+}
